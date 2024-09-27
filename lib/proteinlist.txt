@@ -1,0 +1,3 @@
+Protein	TargetName	PDBID
+P38	p38	3ha8
+auroraA	auroraA	3ha6

@@ -1,0 +1,27 @@
+sheetname	项目	计算方法	暂定阈值	备注
+dlp.detail	TAG*			各循环BB在DEL库中对应的编号
+dlp.detail	TAG*_structure			各循环BB结构
+dlp.detail	TAG*_FF			各循环BB Fragment
+dlp.detail	TAG*_BB			各循环BB对应的BB编号
+dlp.detail	DLP			信号类型(点、线、面)
+dlp.detail	FP/TP			信号真阳性(True Positive)或假阳性(False Positive)
+dlp.detail	Confirmation(1/0)			确认后的结果
+dlp.detail	Overlap SampleID			以往存在该信号的样本
+dlp.detail	Overlap Targets			以往存在该信号的靶点(除自身靶点)
+dlp.detail	Overlap Target Numbers			以往存在该信号的靶点数量(除自身靶点)
+dlp.detail	Pro_DNA_interaction			与靶标作用的DNA序列(若有)
+QC	SampleID			样本编号
+QC	Raw_Q30	>75%	>75%	<75%测序数据量质量较低，要求测序公司重测或索赔
+QC	Trim_Q30	>=85%	>=85%	<85%测序数据量质量较低，需要BI提高质控参数
+QC	LowQuality_rate	(RawTotalReads – TrimTotalReads) / RawTotalReads	<=20%	偏高需要BI确认Q30或片段长度等是否存在问题。（低质量reads占比，用于评估数据质量）
+QC	Sample_index_translated_rate	Raw_single_reads(R1/R2) / TrimTotalReads	>=90%	偏高则表明所有样本barcode匹配有效率太低，需与胡子奇一起确认样本的barcode是否有问题（各样本barcode的匹配效率）
+QC	Raw_single_reads(R1/R2)	统计值	>5000	根据样本barcode拆分到各个样本的reads数，与数据量呈正相关
+QC	Lib_code_translated_rate	Raw_counts / Split_counts	>=80%	偏高则需要BI确认哪个库的比值偏大，检查库的翻译过程或BB-tag编码对应表是否存在问题（各库中化合物的翻译效率，用于评估化合物Tag是否存在设计缺陷）
+QC	Dup_ratio	(Raw_counts – Dedup_counts) / Raw_counts	>50%, <90%	偏低则表明测序数据量不足；偏高则需留意，多观察几批数据，从而确定是否需要降低测序数据量
+QC	NGS_ratio	Dedup_counts / QPCR	>10%, <1	偏低首先考虑数据量不足的问题，其次考虑实验QPCR定量或样本降解问题，需反馈给胡子奇；QPCR值大的，理论上Dedup_counts也越大，若出现不一致的现象，需反馈给筛选实验人员，提示QPCR定量中可能存在问题
+QC	Sequencing Depth	Raw_counts / QPCR	>=1	各样本的测序深度，用于评估各样本测序深度是否满足数据分析需求
+QC	ContaminationSeqMax	统计值		样本中污染比例最高的序列，与库对应
+QC	ContaminationSeqMaxRatio	Contamination reads/total reads	<6 %	偏高则表明实验中有污染，提示胡子奇实验环境可能存在污染风险
+QC	ContaminationLibrarys	统计值		样本中污染比例最高的库
+QC	Violations	统计值		统计每个样本在上述阈值以外的项目数，越高代表数据质量越差
+QC	QPCR	实验测定	10^6 ~ 10^8	各样本QPCR值，用于评估测序数据量及计算其他指标

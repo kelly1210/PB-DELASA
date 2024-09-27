@@ -1,0 +1,26 @@
+[subprocess]
+trimExe = 1
+mergeExe = 1
+libraryIDExt = 1
+tagfindExt = 1
+dwarExt = 1
+autoPNGExt = 0
+[parm]
+sar_cutoff = 0.85
+
+[Parameters]
+minLength = 15
+adapter1 = AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC
+adapter2 = AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+q30 = 30
+min_reads = 10
+
+[Tasks]
+numCores = 40
+mem = 85000
+
+sampleNM_MPI = 2
+
+#plot file for insert size is or not needed, "YES or NO"
+response = YES
+single_png = NO
