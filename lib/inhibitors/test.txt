@@ -1,0 +1,8 @@
+Entry Number	Target	Smiles
+777290	test	CN1CC[C@H]([C@@H]1CO)c2c(cc(c3c2oc(cc3=O)c4ccccc4Cl)O)O.Cl
+974106	test	CC(=O)N[C@@H]1CCC[C@@H](C1)C(=O)Nc2cc(c(cn2)Cl)c3cnn4c3CC(C4)(C)C
+699799	test	C[C@H]([C@@H](C)Oc1c(cnc(n1)Nc2ccc(cc2)[S@](=N)(=O)C3CC3)C(F)(F)F)O
+309808	test	CC[C@H](CO)Nc1nc(c2c(n1)n(cn2)C(C)C)NCc3ccccc3
+253029	test	CCC(CO)Nc1nc(c2c(n1)n(cn2)C(C)C)NCc3ccccc3
+1110685	test	CCC(CC)c1cc(n2c(n1)ccn2)N[C@H]3CC[C@@H](C3)N
+740650	test	CC[C@@H]([C@@H](C)O)Nc1nc(c2c(n1)n(cn2)C(C)C)NCc3cnc(cc3C)C
