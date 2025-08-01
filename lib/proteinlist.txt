@@ -1,0 +1,4 @@
+Protein	TargetName	PDBID
+test	test	6z45_format_format
+P38	p38	3ha8
+auroraA	auroraA	3ha6
