@@ -46,37 +46,75 @@ export seqtk_software=[path_to_seqtk]/seqtk
 export VinaProg=[path_to_vina]/CB-Dock/prog/  
 export cutadaptPATH=[path_to_cutadapt]/  
 ### 9. usage  
-pbdel.py  
-                [-h] -fq1 <string> -fq2 <string> -inPCR <int> -barcode <string>  
-               -c <string> -o <string> -p <string> -s <string> -d <string>        
-               -l <string> -code <string> -r <string>  
-optional arguments:  
-  -h, --help              
-                        show this help message and exit  
-  -fq1 <string>, --caseFq1 <string>  
-                        The fastq file read1. The format is *.fastq.gz or *.fastq.  
-  -fq2 <string>, --caseFq2 <string>    
-                        The fastq file read2. The format is *.fastq.gz or *.fastq.  
-  -inPCR <int>           
-                        1 if constant in PCR, 0 or not  
-  -barcode <string>     Output barcode file, which containg the barcodes of  
-                        all samples.  
-  -c <string>, --config <string>  
-                        Sample special configure file  
-  -d <string>, --configDir <string>  
-                        Output config directionary for each sample.  
-  -r <string>, --runscript_path <string>  
-                        Run script directory for each batch data  
-  -o <string>, --output_path <string>  
-                        Output directory for each batch data  
-  -p <string>, --prefix <string>  
-                        The name of each batch data.  
-  -s <string>, --samples <string>  
-                        A table for sample information, txt file and 'TAB' as the seperate.  
-  -l <string>, --libraryInfo <string>  
-                        A table for library information, txt file and 'TAB' as the seperate.  
-  -code <string>, --codeDir <string>  
-                        TagCode~structure file dir  
+pbdel.py
+
+                [-h] -fq1 <string> -fq2 <string> -inPCR <int> -barcode <string>
+
+               -c <string> -o <string> -p <string> -s <string> -d <string> 
+               
+               -l <string> -code <string> -r <string>
+
+optional arguments:
+
+  -h, --help            
+  
+                        show this help message and exit
+  
+  -fq1 <string>, --caseFq1 <string>
+  
+                        The fastq file read1. The format is *.fastq.gz or
+                        
+                        *.fastq.
+                        
+  -fq2 <string>, --caseFq2 <string>
+  
+                        The fastq file read2. The format is *.fastq.gz or
+                        
+                        *.fastq.
+                        
+  -inPCR <int>         
+  
+                        1 if constant in PCR, 0 or not
+  
+  -barcode <string>     Output barcode file, which containg the barcodes of
+  
+                        all samples.
+                        
+  -c <string>, --config <string>
+  
+                        Sample special configure file
+                        
+  -d <string>, --configDir <string>
+  
+                        Output config directionary for each sample.
+                        
+  -r <string>, --runscript_path <string>
+  
+                        Run script directory for each batch data
+                        
+  -o <string>, --output_path <string>
+  
+                        Output directory for each batch data
+                        
+  -p <string>, --prefix <string>
+  
+                        The name of each batch data.
+                        
+  -s <string>, --samples <string>
+  
+                        A table for sample information, txt file and 'TAB' as
+                        
+                        the seperate.
+                        
+  -l <string>, --libraryInfo <string>
+  
+                        A table for library information, txt file and 'TAB' as
+                        
+                        the seperate.
+                        
+  -code <string>, --codeDir <string>
+  
+                        TagCode~structure file dir
                         
 #### Example 1:
 inputfile: fastq file, code file, config file, sample_info.txt, library_info.txt  
