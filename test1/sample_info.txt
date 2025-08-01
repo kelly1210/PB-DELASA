@@ -1,3 +1,0 @@
-ExperimentID	Protein	Concentration	RoundNM	SampleID	I5	I3	LibraryID	positive_sample	dedup_method	plot_threshold	NTC	QPCR	Pair	Pocket	Pocket_diff	Client
-NGS001	NTC	0	III	NGS001_1	TGACCA	TATACT	test	0	uniq	0	0	1	0	0	0	inner
-NGS001	P38	0.5	III	NGS001_2	ACAGTG	TATACT	test	0	uniq	0	0	1	NGS001_1	0	0	inner
