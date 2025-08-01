@@ -1,0 +1,2 @@
+ExperimentID	Protein	Concentration	RoundNM	SampleID	I5	I3	LibraryID	positive_sample	dedup_method	plot_threshold	NTC	QPCR	Pair	Pocket	Pocket_diff	Client
+NGS001	test	5	III	S1	TGACCA	GTCATG	libtest	0	uniq	0	0	1	0	0	0	inner
