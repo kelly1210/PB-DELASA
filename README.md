@@ -141,7 +141,7 @@ process: off-DNA recommend
 nohup ./example2.sh &  
 
 #### New data  
-Raw sequencing data storage: ./example/*_r1.fastq.gz, ./example/*_r1.fastq.gz  
+Raw sequencing data storage: ./example/*_r1.fastq.gz, ./example/*_r2.fastq.gz  
 
 To add new samples or modify existing libraries, update the following files:  
 1. ./lib/library_info.txt**: Contains metadata for each library, including:  
