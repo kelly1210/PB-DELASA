@@ -1,4 +1,4 @@
-python DEL_predict_v12.py \
+python DEL_predict.py \
 -s ${sampleinfo_dir}/sample_info.txt \
 -i1 ${outdir}/09.report/table/test.count.sum.dlp.detail.txt \
 -i2 ${outdir}/06.Dwar \
